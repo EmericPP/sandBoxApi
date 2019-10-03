@@ -1,0 +1,19 @@
+{
+  "rootAPI": "/api/v1/",
+  "port": 3000,
+  "db": {
+    "host"     : "localhost",
+    "database" : "nodejssandbox",
+    "user"     : "root",
+    "password" : ""
+  },
+  "success": {
+    "delete": ""
+  },
+  "errors": {
+    "idIsMissing": "id is missing",
+    "titleIsMissing": "Title is missing",
+    "sameTitle": "Title already exist",
+    "wrongMaxValue": "Wrong value of query : max. It must be an integer bigger than 0"
+  }
+}

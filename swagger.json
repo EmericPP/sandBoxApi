@@ -1,0 +1,148 @@
+{
+  "info": {
+    "description": "This is a sample server",
+    "title": "Swagger",
+    "version": "1.0.0"
+  },
+  "host": "localhost:3000",
+  "basePath": "/api/v1",
+  "produces": [
+    "application/json",
+    "application/xml"
+  ],
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "swagger": "2.0",
+  "paths": {
+    "/todolists": {
+      "get": {
+        "parameters": [],
+        "description": "",
+        "tags": [
+          "Todolists"
+        ],
+        "responses": {
+          "200": {
+            "description": "An array of todolists"
+          },
+          "default": {
+            "description": "Unexpected error"
+          }
+        }
+      },
+      "post": {
+        "parameters": [
+          {
+            "name": "title",
+            "in": "body",
+            "description": null,
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Todolists"
+        ],
+        "responses": {
+          "200": {
+            "description": "a todolist"
+          },
+          "default": {
+            "description": "Unexpected error"
+          }
+        }
+      }
+    },
+    "/todolists/{id}": {
+      "delete": {
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": null,
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Todolists"
+        ],
+        "responses": {
+          "200": {
+            "description": "a todolist"
+          },
+          "default": {
+            "description": "Unexpected error"
+          }
+        }
+      },
+      "get": {
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": null,
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Todolists"
+        ],
+        "responses": {
+          "200": {
+            "description": "a todolist"
+          },
+          "default": {
+            "description": "Unexpected error"
+          }
+        }
+      },
+      "put": {
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": null,
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "in": "body",
+            "description": null,
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Todolists"
+        ],
+        "responses": {
+          "200": {
+            "description": "a todolist"
+          },
+          "default": {
+            "description": "Unexpected error"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {},
+  "responses": {},
+  "parameters": {},
+  "securityDefinitions": {},
+  "tags": [
+    {
+      "name": "Todolists",
+      "description": "Operations about todolists"
+    }
+  ]
+}
